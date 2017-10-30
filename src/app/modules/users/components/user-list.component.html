@@ -1,15 +1,15 @@
 <table>
-  <thead>
-   <tr>
-     <th>Name</th>
-     <th>Email</th>
-   </tr>
-  </thead>
-  <tbody>
-   <tr>
-     <td>name</td>
-     <td>email</td>
-   </tr>
-  </tbody>
- </table>
- 
+    <thead>
+     <tr>
+      <th>Name</th>
+      <th>Email</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr *ngFor="let u of users">
+       <td>{{u.name}}</td>
+       <td>{{u.email}}</td>
+     </tr>
+    </tbody>
+   </table>
+   
